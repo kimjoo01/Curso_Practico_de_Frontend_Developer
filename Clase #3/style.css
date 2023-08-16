@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+:root {
+    --white: #FFFFFF;
+    --black: #000000; 
+    --very_light_pink: #C7C7C7;
+    --text_input_field: #f7f7f7;
+    --hospital_green: #ACD9B2;
+    --hospital_blue: #acd8d9;
+    --apple_green: #5edb6e;
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.login {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.form_container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 30rem;
+}
+.logo {
+    width: 15rem;
+    margin-bottom: 4.8rem;
+    justify-self: center;
+    display: none;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.form a{
+    color: var(--hospital_green);
+    font-size: var(--sm);
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 5.2rem;
+}
+.label{
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+}
+.input{
+    background-color: var(--text_input_field);
+    border: none;
+    border-radius: 8px;
+    height: 3rem;
+    font-size: var(--md);
+    padding: 0.6rem;
+    margin-bottom: 1.2rem;
+}
+.input_email{
+    margin-bottom: 2.2rem;
+}
+.primary_button{
+    background-color: var(--hospital_green);
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 5rem;
+    margin-bottom: 1.5rem;
+}
+.secondary_button{
+    background-color: var(--white);
+    border: 0.2rem solid var(--hospital_green);
+    border-radius: 8px;
+    color: var(--hospital_green);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 5rem;
+    margin-bottom: 1.5rem;
+}
+
+.input:focus {
+    /* border-color: var(--hospital_blue); */
+    outline-color: var(--hospital_blue);
+}
+.primary_button:hover, .primary_button:checked {
+    background-color: var(--apple_green);
+}
+.form a:hover, .form a:checked {
+    color: var(--apple_green);
+}
+.secondary_button:hover, .secondary_button:checked {
+    color: var(--apple_green);
+    border-color: var(--apple_green);
+}
+
+@media (max-width: 640px) {
+    .logo{
+        display: block;
+    }
+}
