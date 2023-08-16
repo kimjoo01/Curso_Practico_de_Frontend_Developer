@@ -70,6 +70,11 @@ body {
     margin-bottom: 1.5rem;
 }
 
+.secondary_button:hover, .secondary_button:checked {
+    color: var(--apple_green);
+    border-color: var(--apple_green);
+}
+
 .input:focus {
     /* border-color: var(--hospital_blue); */
     outline-color: var(--hospital_blue);
