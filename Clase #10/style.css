@@ -37,9 +37,7 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 30rem;
-    background-color: var(--text_input_field);
-    border-radius: 0.8rem;
-    padding: 1.5rem 1rem;
+    margin-bottom: 3rem;
 }
 .my_order_content span{
     font-size: var(--md);
@@ -56,33 +54,10 @@ body {
     font-size: var(--sm);
     color: var(--very_light_pink);
 }
-.my_order_content div{
+.my_order_content div:nth-child(1){
     display: flex;
     flex-direction: column;
 }
-.shopping_cart {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 2rem 0;
-}
-.shopping_cart figure img {
-    width: 7rem;
-    height: 7rem;
-    border-radius: 2rem;
-    object-fit: cover;
-}
-.shopping_cart div {
-    display: flex;
-    align-items: center;
-}
-.shopping_cart div p{
-    color: var(--very_light_pink);
-    font-size: var(--md);
-    margin-left: 1rem;
-}
-.shopping_cart p{
-    color: var(--black);
-    font-size: var(--md);
-    font-weight: bold;
+.my_order_content div:nth-child(2) img{
+    margin: 0 0 0 1rem;
 }
